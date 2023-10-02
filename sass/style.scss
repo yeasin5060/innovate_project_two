@@ -1,0 +1,469 @@
+$white:#ffff;
+$black:#30344E;
+$Secondary:#FD5F36;
+$Primary:#52C5B6;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1 h2 h3 h4 h5 h6 p{
+    line-height: 0.8;
+}
+@mixin common_btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: $white;
+    padding: 14px 28px;
+    text-transform: capitalize;
+    border: 1px solid $white;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: $Secondary;
+        color:$black;
+        border: none;
+    }
+}
+@mixin heading{
+    font-size: 48px;
+    font-weight: 600;
+    color:$black;
+    text-transform: capitalize;
+    line-height: 150%;
+}
+@mixin sub_heading{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+@mixin pera{
+    font-size: 16;
+    font-weight: 400;
+    color: $black;
+    text-transform: capitalize;
+    line-height: 140%;
+}
+.container{
+    width: 1410px;
+    margin: 0 auto;
+}
+/*===================== navbar start ======================*/
+#navbar{
+    padding: 30px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1920px;
+    z-index: 999;
+    .navbar_wrapper{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .navbar_logo{
+            width: 111px;
+            height: 60px;
+            text-align: left;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .navbar_menu{
+            width: 60%;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 50px;
+                li{
+                    position: relative;
+                    a{
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $white;
+                        cursor: pointer;
+                        text-transform: capitalize;
+                        line-height: 150%;
+                        position: relative;
+                        i{
+                            color: $white;
+                            margin-left: 8px;
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            width: 0;
+                            height: 1px;
+                            background: $white;
+                            left: 0;
+                            bottom: -5px;
+                            z-index: 11;
+                            transition: all linear 0.3s;
+                        }
+                        &:hover::after{
+                            width: 50%;
+                        }
+                    }
+                    .angledown{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        background-color:#fff;
+                        cursor: pointer;
+                        width: 200px;
+                        height: 200px;
+                        visibility: hidden;
+                        opacity: 0;
+                        position: absolute;
+                        top: 40px;
+                        left:42%;
+                        transform: translateX(-54%);
+                        z-index: 555;
+                        transition: all linear 0.3s;
+                        li{
+                            a{
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: $black;
+                            cursor: pointer;
+                            text-transform: capitalize;
+                            line-height: 150%;
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                width: 0;
+                                height: 1px;
+                                background: $black;
+                                left: 0;
+                                bottom: -5px;
+                                z-index: 11;
+                                transition: all linear 0.3s;
+                            }
+                            &:hover::after{
+                                width: 50%;
+                            }
+                            }
+                        }
+                    }
+                    &:hover .angledown{
+                        visibility: visible;
+                        opacity: 1;
+                        cursor: pointer;
+                        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
+                    }    
+                }
+            }
+        }
+        .navbar_btn{
+            width: 20%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            column-gap: 12px;
+            button{
+                font-size: 18px;
+                font-weight: 400;
+                color: $white;
+                cursor: pointer;
+                text-transform: capitalize;
+                background: transparent;
+                line-height: 150%;
+                border: none;
+            }
+            a{
+                word-spacing: 10px;
+                @include common_btn;
+            }
+        }
+    }
+}
+/*===================== navbar end ======================*/
+/*===================== banner part start ======================*/
+#banner{
+    padding-top: 163px;
+    background: #30344E;
+    width: 1920px;
+    .banner_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 188px;
+        .banner_heading{
+            h1{
+                width: 644px;
+                font-size: 60px;
+                font-weight: 600;
+                color: $white;
+                line-height: 150%;
+                text-transform: capitalize;
+                margin-bottom: 24px;
+            }
+            p{
+                color: $white;
+                width: 540px;
+                @include sub_heading;
+                margin-bottom: 40px;
+            }
+            .banner_btn{
+                margin-bottom: 50px;
+                a{
+                    @include common_btn;
+                }
+            }
+            span{
+                font-size: 20px;
+                font-weight: 400;
+                color: $white;
+                text-transform: capitalize;
+                line-height: 140%;
+                a{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $Primary;
+                    cursor: pointer;
+                    text-transform: capitalize;
+                    line-height: 140%; 
+                }
+            }
+            .banner_review{
+                display: flex;
+                justify-content: left;
+                column-gap: 24px;
+                margin-top: 71px;
+                .banner_review_image{
+                    display: flex;
+                    justify-content: left;
+                    .banner_review_user{
+                        width: 52px;
+                        height: 52px;
+                        background: #C4C4C4;
+                        border-radius: 50%;
+                    }
+                }
+                .banner_review_contant{
+                    h4{
+                        font-size: 26px;
+                        font-weight: 700;
+                        color: $Primary;
+                        line-height: 150%;
+                    }
+                    p{
+                        color: $white;
+                        margin-top: 2.71px;
+                        @include sub_heading;
+                    }
+                }
+            }
+        }
+        .banner_image{
+            width: 794px;
+            height: 795px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+/*===================== banner part start ======================*/
+/*===================== wellcome part start ======================*/
+#wellcome{
+    padding: 150px 0 130px 0;
+    background: $white;
+    width: 1920px;
+    .wellcome_wrapper{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        column-gap: 101px;
+        .wellcome_image{
+            width: 582px;
+            height: 630px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .wellcome_heading{
+            width: 584px;
+            h4{
+                font-size: 20px;
+                font-weight: 600;
+                color: $Secondary;
+                text-transform: capitalize;
+                line-height: 150%;
+                margin-bottom: 8px;
+            }
+            .heading{
+                @include heading;
+                margin-bottom: 20px;
+            }
+            .pera{
+                @include pera;
+            }
+            .wellcome_list{
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
+                row-gap: 18px;
+                margin-top: 26px;
+                .list_pera{
+                    @include pera;
+                    i{
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $black;
+                        margin-right: 12px;
+                    }
+                }
+            }
+            .wellcome_btn_wrapper{
+                margin-top: 40px;
+                .wellcome_btn{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $black;
+                    padding: 14px 28px;
+                    text-transform: capitalize;
+                    border: 1px solid $black;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &:hover{
+                    background-color: $Secondary;
+                    color:$white;
+                    border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*===================== wellcome part end ======================*/
+/*===================== service part start ======================*/
+#service{
+    padding: 120px 0;
+    background: #FAFAFA;
+    width: 1920px;
+    .service_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 456px;
+        .service_head_wrapper{
+            h4{
+                font-size: 20px;
+                font-weight: 600;
+                color: $Secondary;
+                text-transform: capitalize;
+                line-height: 150%;
+                margin-bottom: 8px;
+            }
+            .service_subheading{
+                @include heading;
+            }
+        }
+        .service_pera_wrapper{
+            .service_pera{
+                width: 538px;
+                @include pera;
+            }
+        }
+    }
+    .service_icons_wrapper{
+        display: flex;
+        justify-content: space-between;
+        gap: 27px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        .service_icon_box{
+            padding: 40px 24px;
+            width: 330px;
+            background: $white;
+            text-align: center;
+            -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+            .service_icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: $Secondary;
+                margin: 0 auto;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 100px;
+                    height: 100px;
+                    border: 1px solid $Secondary;
+                    border-radius: 50%;
+                    background: transparent;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background: $Secondary;
+                    border-radius: 50%;
+                    left: 0px;
+                    top: -1px;
+                    animation: rotate 24s linear infinite;
+                    @keyframes rotate{
+                        from{
+                            transform: rotate(0deg);
+                        }
+                        to{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+                i{
+                    font-size: 30px;
+                    color: $white;
+                    background: transparent;
+                }
+            }
+            .icon_contant{
+                font-size: 20px;
+                font-weight: 600;
+                color: $black;
+                text-transform: capitalize;
+                line-height: 150%;
+                margin-bottom: 14px;
+                margin-top: 30px;
+            }
+            .icon_pera{
+                margin-top: 14px;
+                @include pera;
+            }
+        }
+    }
+}
+/*===================== service part end ======================*/
+/*===================== service part start ======================*/
+/*===================== service part end ======================*/
+/*===================== service part start ======================*/
+/*===================== service part end ======================*/
