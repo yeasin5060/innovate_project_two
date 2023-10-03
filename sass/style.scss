@@ -463,7 +463,171 @@ h1 h2 h3 h4 h5 h6 p{
     }
 }
 /*===================== service part end ======================*/
-/*===================== service part start ======================*/
-/*===================== service part end ======================*/
+/*===================== solution part start ======================*/
+#solution{
+    padding: 164px 0;
+    background: $white;
+    width: 1920px;
+    .solution_wrapper{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 86px;
+        .solution_contant{
+            width: 623px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            flex-wrap: wrap;
+            .solution_heading{
+                width: 505px;
+                @include heading;
+                margin-bottom: 20px;
+            }
+            .solution_pera{
+                width: 530px;
+                @include pera;
+                margin-bottom: 40px;
+            }
+            .solution_btn{
+                margin-bottom: 70px;
+                a{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $black;
+                    padding: 14px 28px;
+                    text-transform: capitalize;
+                    border: 1px solid $black;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &:hover{
+                    background-color: $Secondary;
+                    color:$white;
+                    border: none;
+                    }
+                }
+            }
+            .solution_mini_contant{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 70px;
+                .solution_mini_contant_item{
+                    .mini_heading{
+                        width: 275px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $black;
+                        text-transform: capitalize;
+                        line-height: 150%;
+                        margin-bottom: 12px;
+                    }
+                    .mini_pera{
+                        width: 258px;
+                        @include pera;
+                    }
+                }
+            }
+        }
+        .solution_image{
+            width: 716px;
+            height: 581px;
+            position: relative;
+            .solution_box_one{
+                width: 291px;
+                height: 374px;
+                overflow: hidden;
+                border-radius: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .solution_box_two{
+                position: absolute;
+                width: 411px;
+                height: 460px;
+                border-radius: 10px;
+                right:2px;
+                top: 0;
+                z-index: 22;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+            .solution_box_three{
+                position: absolute;
+                width: 151px;
+                height: 83px;
+                left: 119px;
+                top: 74px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    object-fit: cover;
+                }
+            }
+            .solution_box_four{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                column-gap: 12px;
+                background-color: $Primary;
+                padding-left: 25px;
+                width: 361px;
+                height: 107px;
+                position: absolute;
+                right: 113px;
+                bottom: 0;
+                z-index: 11;
+                .flow_heading{
+                    h2{
+                        font-size: 70px;
+                        font-weight: 600;
+                        color: $white;
+                    }
+                }
+                .flow_contant{
+                    h3{
+                        width: 134px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $white;
+                        text-transform: capitalize;
+                        line-height: 150%;
+                    }
+                }
+            }
+            .solution_box_five{
+                position: absolute;
+                width: 223px;
+                height: 250px;
+                background: $Primary;
+                border-radius: 10px;
+                right: -10px;
+                top: -10px;
+                z-index: 0;
+            }
+            .solution_box_six{
+                position: absolute;
+                width: 126px;
+                height: 129px;
+                right: 33px;
+                bottom: 46.55px;
+                z-index: 0;
+            }
+        }
+    }
+}
+/*===================== solution part end ======================*/
 /*===================== service part start ======================*/
 /*===================== service part end ======================*/

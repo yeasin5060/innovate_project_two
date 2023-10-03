@@ -484,7 +484,184 @@ h1 h2 h3 h4 h5 h6 p {
 }
 
 /*===================== service part end ======================*/
-/*===================== service part start ======================*/
-/*===================== service part end ======================*/
+/*===================== solution part start ======================*/
+#solution {
+  padding: 164px 0;
+  background: white;
+  width: 1920px;
+}
+#solution .solution_wrapper {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 86px;
+       column-gap: 86px;
+}
+#solution .solution_wrapper .solution_contant {
+  width: 623px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+#solution .solution_wrapper .solution_contant .solution_heading {
+  width: 505px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #30344E;
+  text-transform: capitalize;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+#solution .solution_wrapper .solution_contant .solution_pera {
+  width: 530px;
+  font-size: 16;
+  font-weight: 400;
+  color: #30344E;
+  text-transform: capitalize;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+#solution .solution_wrapper .solution_contant .solution_btn {
+  margin-bottom: 70px;
+}
+#solution .solution_wrapper .solution_contant .solution_btn a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #30344E;
+  padding: 14px 28px;
+  text-transform: capitalize;
+  border: 1px solid #30344E;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#solution .solution_wrapper .solution_contant .solution_btn a:hover {
+  background-color: #FD5F36;
+  color: white;
+  border: none;
+}
+#solution .solution_wrapper .solution_contant .solution_mini_contant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+#solution .solution_wrapper .solution_contant .solution_mini_contant .solution_mini_contant_item .mini_heading {
+  width: 275px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #30344E;
+  text-transform: capitalize;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+#solution .solution_wrapper .solution_contant .solution_mini_contant .solution_mini_contant_item .mini_pera {
+  width: 258px;
+  font-size: 16;
+  font-weight: 400;
+  color: #30344E;
+  text-transform: capitalize;
+  line-height: 140%;
+}
+#solution .solution_wrapper .solution_image {
+  width: 716px;
+  height: 581px;
+  position: relative;
+}
+#solution .solution_wrapper .solution_image .solution_box_one {
+  width: 291px;
+  height: 374px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#solution .solution_wrapper .solution_image .solution_box_one img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#solution .solution_wrapper .solution_image .solution_box_two {
+  position: absolute;
+  width: 411px;
+  height: 460px;
+  border-radius: 10px;
+  right: 2px;
+  top: 0;
+  z-index: 22;
+}
+#solution .solution_wrapper .solution_image .solution_box_two img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#solution .solution_wrapper .solution_image .solution_box_three {
+  position: absolute;
+  width: 151px;
+  height: 83px;
+  left: 119px;
+  top: 74px;
+}
+#solution .solution_wrapper .solution_image .solution_box_three img {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#solution .solution_wrapper .solution_image .solution_box_four {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  background-color: #52C5B6;
+  padding-left: 25px;
+  width: 361px;
+  height: 107px;
+  position: absolute;
+  right: 113px;
+  bottom: 0;
+  z-index: 11;
+}
+#solution .solution_wrapper .solution_image .solution_box_four .flow_heading h2 {
+  font-size: 70px;
+  font-weight: 600;
+  color: white;
+}
+#solution .solution_wrapper .solution_image .solution_box_four .flow_contant h3 {
+  width: 134px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  line-height: 150%;
+}
+#solution .solution_wrapper .solution_image .solution_box_five {
+  position: absolute;
+  width: 223px;
+  height: 250px;
+  background: #52C5B6;
+  border-radius: 10px;
+  right: -10px;
+  top: -10px;
+  z-index: 0;
+}
+#solution .solution_wrapper .solution_image .solution_box_six {
+  position: absolute;
+  width: 126px;
+  height: 129px;
+  right: 33px;
+  bottom: 46.55px;
+  z-index: 0;
+}
+
+/*===================== solution part end ======================*/
 /*===================== service part start ======================*/
 /*===================== service part end ======================*//*# sourceMappingURL=style.css.map */
