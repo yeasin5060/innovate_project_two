@@ -28,7 +28,7 @@ h1 h2 h3 h4 h5 h6 p {
   position: absolute;
   left: 0;
   top: 0;
-  width: 1920px;
+  width: 100%;
   z-index: 999;
 }
 #navbar .navbar_wrapper {
@@ -162,11 +162,12 @@ h1 h2 h3 h4 h5 h6 p {
   border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 #navbar .navbar_wrapper .navbar_btn a:hover {
   background-color: #FD5F36;
   color: #30344E;
-  border: none;
+  border: transparent;
 }
 
 /*===================== navbar end ======================*/
@@ -174,7 +175,6 @@ h1 h2 h3 h4 h5 h6 p {
 #banner {
   padding-top: 163px;
   background: #30344E;
-  width: 1920px;
 }
 #banner .banner_wrapper {
   display: flex;
@@ -213,11 +213,12 @@ h1 h2 h3 h4 h5 h6 p {
   border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 #banner .banner_wrapper .banner_heading .banner_btn a:hover {
   background-color: #FD5F36;
   color: #30344E;
-  border: none;
+  border: transparent;
 }
 #banner .banner_wrapper .banner_heading span {
   font-size: 20px;
@@ -282,7 +283,6 @@ h1 h2 h3 h4 h5 h6 p {
 #wellcome {
   padding: 150px 0 130px 0;
   background: white;
-  width: 1920px;
 }
 #wellcome .wellcome_wrapper {
   display: flex;
@@ -360,6 +360,7 @@ h1 h2 h3 h4 h5 h6 p {
   border: 1px solid #30344E;
   border-radius: 5px;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 #wellcome .wellcome_wrapper .wellcome_heading .wellcome_btn_wrapper .wellcome_btn:hover {
   background-color: #FD5F36;
@@ -372,7 +373,6 @@ h1 h2 h3 h4 h5 h6 p {
 #service {
   padding: 120px 0;
   background: #FAFAFA;
-  width: 1920px;
 }
 #service .service_wrapper {
   display: flex;
@@ -488,7 +488,6 @@ h1 h2 h3 h4 h5 h6 p {
 #solution {
   padding: 164px 0;
   background: white;
-  width: 1920px;
 }
 #solution .solution_wrapper {
   display: flex;
@@ -534,6 +533,7 @@ h1 h2 h3 h4 h5 h6 p {
   border: 1px solid #30344E;
   border-radius: 5px;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 #solution .solution_wrapper .solution_contant .solution_btn a:hover {
   background-color: #FD5F36;
@@ -663,5 +663,155 @@ h1 h2 h3 h4 h5 h6 p {
 }
 
 /*===================== solution part end ======================*/
-/*===================== service part start ======================*/
-/*===================== service part end ======================*//*# sourceMappingURL=style.css.map */
+/*===================== expert part start ======================*/
+#expert {
+  padding: 80px 0 221px 0;
+  margin-bottom: 223px;
+  background: #30344E;
+  position: relative;
+}
+#expert .expert_contant .expert_mini_head {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FD5F36;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+#expert .expert_contant .expert_heading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  line-height: 150%;
+}
+#expert .image_wrapper_main {
+  position: relative;
+}
+#expert .image_wrapper_main .expert_images_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 11;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image {
+  width: 300px;
+  height: 394px;
+  position: relative;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image .expert_image_contant {
+  padding: 22px 0 22px 66px;
+  width: 232px;
+  background-color: white;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image .expert_image_contant:hover {
+  background-color: #52C5B6;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image .expert_image_contant:hover .image_head {
+  color: white;
+  transition: all linear 0.3s;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image .expert_image_contant:hover .image_pera {
+  color: white;
+  transition: all linear 0.3s;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image .expert_image_contant .image_head {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #30344E;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+#expert .image_wrapper_main .expert_images_wrapper .expert_image .expert_image_contant .image_pera {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #5B5F77;
+  text-transform: capitalize;
+}
+#expert .expert_victor {
+  position: absolute;
+  width: 561px;
+  height: 157px;
+  left: 0;
+  top: 105px;
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+/*===================== investing part end ======================*/
+#investing {
+  margin-top: 320px 0 132px 0;
+}
+#investing .investing_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 111px;
+       column-gap: 111px;
+}
+#investing .investing_wrapper .investing_image {
+  width: 557px;
+  height: 733px;
+  overflow: hidden;
+}
+#investing .investing_wrapper .investing_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#investing .investing_wrapper .investing_contant {
+  width: 742px;
+}
+#investing .investing_wrapper .investing_contant .investing_contant_head {
+  margin-bottom: 68px;
+  width: 600px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #30344E;
+  text-transform: capitalize;
+  line-height: 150%;
+}
+#investing .investing_wrapper .investing_contant .investing_contant_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #30344E;
+  padding: 18px 30px;
+  margin-bottom: 20px;
+}
+#investing .investing_wrapper .investing_contant .investing_contant_items .contant_item_pera .pera {
+  font-size: 20px;
+  font-weight: 600;
+  color: #30344E;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+#investing .investing_wrapper .investing_contant .investing_contant_items .contant_item_pera .contant_item_icon i {
+  font-size: 20px;
+  font-weight: 600;
+  color: #30344E;
+}
+
+/*===================== investing part start ======================*//*# sourceMappingURL=style.css.map */
