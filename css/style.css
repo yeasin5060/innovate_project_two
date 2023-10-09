@@ -761,7 +761,7 @@ h1 h2 h3 h4 h5 h6 p {
 
 /*===================== investing part end ======================*/
 #investing {
-  margin-top: 320px 0 132px 0;
+  margin: 320px 0 132px 0;
 }
 #investing .investing_wrapper {
   display: flex;
@@ -814,4 +814,273 @@ h1 h2 h3 h4 h5 h6 p {
   color: #30344E;
 }
 
-/*===================== investing part start ======================*//*# sourceMappingURL=style.css.map */
+/*===================== investing part end ======================*/
+/*===================== investing part start ======================*/
+#leading {
+  padding: 100px 0 110px 0;
+  background-color: #52C5B6;
+}
+#leading .leading_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#leading .leading_wrapper .leading_heading {
+  width: 551px;
+}
+#leading .leading_wrapper .leading_heading .leading_head {
+  font-size: 38px;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+#leading .leading_wrapper .leading_heading .leading_btn a {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 14px 28px;
+  text-transform: capitalize;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#leading .leading_wrapper .leading_heading .leading_btn a:hover {
+  background-color: #FD5F36;
+  color: #30344E;
+  border: transparent;
+}
+#leading .leading_wrapper .leading_number .number_items {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 139px;
+       column-gap: 139px;
+}
+#leading .leading_wrapper .leading_number .number_items .number_item .number_head {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+#leading .leading_wrapper .leading_number .number_items .number_item .number_pera {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+#leading .leading_wrapper .leading_number .leading_link {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 139px;
+       column-gap: 139px;
+  margin-top: 50px;
+}
+#leading .leading_wrapper .leading_number .leading_link a {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+/*===================== investing part end ======================*/
+/*===================== news part start ======================*/
+#news {
+  margin: 130px 0;
+}
+#news .news_heading {
+  width: 618px;
+  margin: 0 auto;
+  text-align: center;
+}
+#news .news_heading .news_minihead {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FD5F36;
+  text-transform: capitalize;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+#news .news_heading .news_head {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #30344E;
+  text-transform: capitalize;
+  line-height: 150%;
+}
+#news .news_image_contant_wrapper {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  margin-top: 40px;
+}
+#news .news_image_contant_wrapper .news_contant_box {
+  width: 446px;
+  background-color: white;
+}
+#news .news_image_contant_wrapper .news_contant_box .news_image_box {
+  width: 100%;
+  height: 294px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#news .news_image_contant_wrapper .news_contant_box .news_image_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#news .news_image_contant_wrapper .news_contant_box .contant_box .contant_head {
+  width: 445px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #30344E;
+  text-transform: capitalize;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+#news .news_image_contant_wrapper .news_contant_box .contant_box .contant_pera {
+  color: #30344E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+/*===================== news part end ======================*/
+/*===================== foot part start ======================*/
+#foot {
+  padding-top: 110px;
+  background: #30344E;
+}
+#foot .foot_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#foot .foot_wrapper .foot_logo_box .foot_logo {
+  width: 111px;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+#foot .foot_wrapper .foot_logo_box .foot_logo a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#foot .foot_wrapper .foot_logo_box .foot_pera {
+  width: 263px;
+  font-size: 16;
+  font-weight: 400;
+  color: white;
+  text-transform: capitalize;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+#foot .foot_wrapper .foot_logo_box .foot_icons_box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 84px;
+}
+#foot .foot_wrapper .foot_logo_box .foot_icons_box .foot_icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#foot .foot_wrapper .foot_items_box {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 119px;
+       column-gap: 119px;
+}
+#foot .foot_wrapper .foot_items_box .foot_items .items_head {
+  margin-bottom: 20px;
+}
+#foot .foot_wrapper .foot_items_box .foot_items .items_head a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #52C5B6;
+  cursor: pointer;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+#foot .foot_wrapper .foot_items_box .foot_items .foot_item_list ul {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  row-gap: 12px;
+}
+#foot .foot_wrapper .foot_items_box .foot_items .foot_item_list ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+#foot .foot_wrapper .foot_update {
+  width: 285px;
+}
+#foot .foot_wrapper .foot_update .items_head {
+  margin-bottom: 20px;
+}
+#foot .foot_wrapper .foot_update .items_head a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #52C5B6;
+  cursor: pointer;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+#foot .foot_wrapper .foot_update .foot_item_list {
+  margin-bottom: 32px;
+}
+#foot .foot_wrapper .foot_update .foot_item_list ul {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  row-gap: 12px;
+}
+#foot .foot_wrapper .foot_update .foot_item_list ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+#foot .foot_wrapper .foot_update form {
+  width: 100%;
+  padding: 16px 0 12px 18px;
+  background: rgba(238, 238, 238, 0.9333333333);
+  cursor: pointer;
+}
+#foot .foot_wrapper .foot_update form input {
+  font-size: 16px;
+  font-weight: 400;
+  color: #30344E;
+  border: unset;
+  background: transparent;
+  cursor: pointer;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+/*===================== foot part end ======================*//*# sourceMappingURL=style.css.map */
